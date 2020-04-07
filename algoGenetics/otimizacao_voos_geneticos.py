@@ -167,8 +167,8 @@ def cruzamento(dominio, solucao1, solucao2):
     return solucao1[0:i] + solucao2[i:]
 
 
-def genetico(dominio, funcao_custo, tamanho_populacao=200, passo=1,
-             probabilidade_mutacao=0.2, elitismo=0.2, numero_geracoes=10000):
+def genetico(dominio, funcao_custo, tamanho_populacao=100, passo=2,
+             probabilidade_mutacao=0.2, elitismo=0.2, numero_geracoes=1000):
 
     populacao = []
     for i in range(tamanho_populacao):
